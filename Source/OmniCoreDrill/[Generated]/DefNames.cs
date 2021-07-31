@@ -21,16 +21,4 @@ namespace DoctorVanGogh.OmniCoreDrill {
 		public const string @Thing_CoreDrill = @"CoreDrill";
 		public const string @Thing_UnfinishedDrillingPlan = @"UnfinishedDrillingPlan";
 	}
-	[GeneratedCode("Defs.Generated.tt","0.1")]
-	[SuppressMessage("ReSharper", "InconsistentNaming")]
-	[SuppressMessage("ReSharper", "UnusedMember.Global")]
-	[SuppressMessage("ReSharper", "ConvertToAutoProperty")]
-	[SuppressMessage("ReSharper", "FieldCanBeMadeReadOnly.Local")]
-	[SuppressMessage("ReSharper", "ConvertPropertyToExpressionBody")]
-	public partial class DefReferences {
-		private static Verse.ThingDef _Thing_CoreDrill = Verse.DefDatabase<Verse.ThingDef>.GetNamed(DefNames.Thing_CoreDrill);
-		private static Verse.ThingDef _Thing_UnfinishedDrillingPlan = Verse.DefDatabase<Verse.ThingDef>.GetNamed(DefNames.Thing_UnfinishedDrillingPlan);
-		public static Verse.ThingDef @Thing_CoreDrill { get { return _Thing_CoreDrill; } }
-		public static Verse.ThingDef @Thing_UnfinishedDrillingPlan { get { return _Thing_UnfinishedDrillingPlan; } }
-	}
 }

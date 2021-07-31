@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef>
     <defName>UnfinishedDrillingPlan</defName>
@@ -19,12 +19,13 @@
     <!-- For CompForbiddable -->
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
-			<DeteriorationRate>0.5</DeteriorationRate>
-			<Beauty>-4</Beauty>
-      <Mass>1</Mass> <!-- ingredients are added to this value -->
-		</statBases>
+      <DeteriorationRate>0.5</DeteriorationRate>
+      <Beauty>-4</Beauty>
+      <Mass>1</Mass>
+      <!-- ingredients are added to this value -->
+    </statBases>
     <comps>
-      <li Class="CompProperties_Forbiddable"/>
+      <li Class="CompProperties_Forbiddable" />
     </comps>
     <alwaysHaulable>true</alwaysHaulable>
     <rotatable>false</rotatable>

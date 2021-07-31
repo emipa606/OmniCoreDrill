@@ -1,18 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
+﻿using System.ComponentModel;
 using Verse;
 
-namespace DoctorVanGogh.OmniCoreDrill {
-    class GlobalDrillParameters : IExposable {
+namespace DoctorVanGogh.OmniCoreDrill
+{
+    internal class GlobalDrillParameters : IExposable
+    {
+        private Multiplier _commonality;
+        private Multiplier _density;
 
         private Multiplier _drillWork;
-        private Multiplier _density;
-        private Multiplier _commonality;
 
-        public GlobalDrillParameters() {
+        public GlobalDrillParameters()
+        {
             _drillWork = new Multiplier();
             _density = new Multiplier();
             _commonality = new Multiplier();
@@ -28,16 +27,10 @@ namespace DoctorVanGogh.OmniCoreDrill {
 
         public Multiplier Commonality => _commonality;
 
-        private void Component_PropertyChanged(object sender, PropertyChangedEventArgs e) {
-            switch (e.PropertyName) {
-                case nameof(Multiplier.Value):
-                    ThingDefGenerator.UpdateAllGeneratedDefs();
-                    break;
-            }
-        }
-
-        public void ExposeData() {
-            if (Scribe.mode == LoadSaveMode.LoadingVars) {
+        public void ExposeData()
+        {
+            if (Scribe.mode == LoadSaveMode.LoadingVars)
+            {
                 _drillWork.PropertyChanged -= Component_PropertyChanged;
                 _density.PropertyChanged -= Component_PropertyChanged;
                 _commonality.PropertyChanged -= Component_PropertyChanged;
@@ -47,12 +40,24 @@ namespace DoctorVanGogh.OmniCoreDrill {
             Scribe_Deep.Look(ref _density, "density");
             Scribe_Deep.Look(ref _commonality, "commonality");
 
-            if (Scribe.mode == LoadSaveMode.LoadingVars) {
-                _drillWork.PropertyChanged += Component_PropertyChanged;
-                _density.PropertyChanged += Component_PropertyChanged;
-                _commonality.PropertyChanged += Component_PropertyChanged;
+            if (Scribe.mode != LoadSaveMode.LoadingVars)
+            {
+                return;
             }
 
+            _drillWork.PropertyChanged += Component_PropertyChanged;
+            _density.PropertyChanged += Component_PropertyChanged;
+            _commonality.PropertyChanged += Component_PropertyChanged;
+        }
+
+        private void Component_PropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            switch (e.PropertyName)
+            {
+                case nameof(Multiplier.Value):
+                    ThingDefGenerator.UpdateAllGeneratedDefs();
+                    break;
+            }
         }
     }
 }

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Manifest>
+  <identifier>OmniCoreDrill</identifier>
+  <version>1.0.1.0</version>
+  <dependencies />
+  <incompatibleWith />
+  <loadBefore />
+  <loadAfter />
+  <manifestUri>https://raw.githubusercontent.com/emipa606/OmniCoreDrill/master/About/Manifest.xml</manifestUri>
+  <downloadUri>https://github.com/emipa606/OmniCoreDrill/releases</downloadUri>
+</Manifest>
+
+

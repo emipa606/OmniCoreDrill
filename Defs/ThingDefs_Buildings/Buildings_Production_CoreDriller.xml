@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef Name="OCD_BuildingBase" Abstract="True">
     <category>Building</category>
@@ -10,11 +10,10 @@
     <repairEffect>Repair</repairEffect>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <filthLeaving>Filth_RubbleBuilding</filthLeaving>
-		<statBases>
-			<SellPriceFactor>0.70</SellPriceFactor>
-		</statBases>
+    <statBases>
+      <SellPriceFactor>0.70</SellPriceFactor>
+    </statBases>
   </ThingDef>
-
   <ThingDef ParentName="OCD_BuildingBase">
     <defName>CoreDrill</defName>
     <thingClass>Building_WorkTable</thingClass>
@@ -59,8 +58,8 @@
         <compClass>CompPowerTrader</compClass>
         <basePowerConsumption>2500</basePowerConsumption>
       </li>
-      <li Class="CompProperties_Flickable"/>
-      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Breakdownable" />
     </comps>
     <designationHotKey>Misc12</designationHotKey>
     <rotatable>true</rotatable>
