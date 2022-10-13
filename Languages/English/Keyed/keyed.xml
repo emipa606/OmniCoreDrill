@@ -9,6 +9,7 @@ Yield: {1:n0} {2}]]></ocd.description>
   <ocd.global>Global</ocd.global>
   <ocd.gameneeded>Per-material settings are available during a running game.</ocd.gameneeded>
   <ocd.work>Work</ocd.work>
+  <ocd.version>Installed mod-version: {0}</ocd.version>
   <ocd.yield>Yield</ocd.yield>
   <ocd.material>Material</ocd.material>
   <ocd.density>Resource lump sizes</ocd.density>

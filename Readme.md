@@ -1,18 +1,18 @@
 # OmniCoreDrill
 
-![Image](https://i.imgur.com/WAEzk68.png)
+![Image](https://i.imgur.com/buuPQel.png)
 
 Update of DoctorVanGogh, TheUbie and pointcaches mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1089876213
 
 - Updated the previews with the correct texture
  
-![Image](https://i.imgur.com/7Gzt3Rg.png)
+![Image](https://i.imgur.com/pufA0kM.png)
 
 	
-![Image](https://i.imgur.com/NOW7jU1.png)
+![Image](https://i.imgur.com/Z4GOv8H.png)
 
-A Rimworld mod offering a *deep core drill* that supports **any** mineable material (vanilla [u]or mod-added[/u]) out of the box. If it&apos;s in a map (not necessarily yours), it can be found by the core drill. You just need enough power and work by your pawns
+A Rimworld mod offering a *deep core drill* that supports **any** mineable material (vanilla [u]or mod-added[/u]) out of the box. If it's in a map (not necessarily yours), it can be found by the core drill. You just need enough power and work by your pawns
 
 Supports any material that could be found in a map as a mineable rock.
 
@@ -22,27 +22,17 @@ For example drilling for Components is quite inefficient due to the small cluste
 
 ### Configuration
 
-You can manually change the amount of work needed/material yielded *per materia, per game*!. By default a material&apos;s rarity/lump size/etc. are https://github.com/DoctorVanGogh/MiningShaft#somewhat-long-winded-balancing-explanation]crunched to set those values.
+You can manually change the amount of work needed/material yielded *per materia, per game*!. By default a material's rarity/lump size/etc. are https://github.com/DoctorVanGogh/MiningShaft#somewhat-long-winded-balancing-explanation]crunched to set those values.
 Via the ingame Options, Mod Options you can tweak those values from 1/4x to 4x.
 
-So if you want to have one high tech game with utterly overflowing amounts of unobtanium, just increase it&apos;s yield to max. And if you want to have another game where there is just no Steel to be found... go for it!
+So if you want to have one high tech game with utterly overflowing amounts of unobtanium, just increase it's yield to max. And if you want to have another game where there is just no Steel to be found... go for it!
 
 
 ### (Un-)Install
 
 Can be installed into existing savegames. Can be safely uninstalled once all bills on the core drill(s) and the drills themselves are removed/deconstructed
 
-
-###  Like my Mods?
-
-https://ko-fi.com/DoctorVanGogh]![Image](https://raw.githubusercontent.com/DoctorVanGogh/Shared/master/Sponsoring/Ko-Fi/buymeacoffee-28.png)
-
-
-### Looking for older versions?
-
-Get them from https://github.com/DoctorVanGogh/MiningShaft/releases]github
-
-![Image](https://i.imgur.com/Rs6T6cr.png)
+![Image](https://i.imgur.com/PwoNOj4.png)
 
 
 
@@ -52,6 +42,7 @@ Get them from https://github.com/DoctorVanGogh/MiningShaft/releases]github
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
+
 
 
 

@@ -60,6 +60,7 @@ namespace DoctorVanGogh.OmniCoreDrill {
 			/// Get's the translation key for '<em>Drill work per resource unit</em>'
 			/// </summary>
 			public const string @ocd_drillwork = "ocd.drillwork";
+			public const string @ocd_version = "ocd.version";
 			/// <summary>
 			/// Get's the translation key for '<em>Resource rarity</em>'
 			/// </summary>
