@@ -9,7 +9,7 @@ public class ExtraWidgets
     public static float LogarithmicScaleSlider(Rect rect, float value, float minValue, float maxValue,
         Func<float, string> valueFormatter, string leftAlignedLabel = null, string rightAlignedLabel = null)
     {
-        return (float)Math.Exp(Widgets.HorizontalSlider(rect, (float)Math.Log(value), minValue, maxValue, true,
+        return (float)Math.Exp(Widgets.HorizontalSlider_NewTemp(rect, (float)Math.Log(value), minValue, maxValue, true,
             valueFormatter(value), leftAlignedLabel, rightAlignedLabel));
     }
 }

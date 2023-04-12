@@ -33,7 +33,7 @@ internal class OmniCoreDrillMod : Mod
 
         Log.Message("Initialized OmniCoreDrill patches");
         currentVersion =
-            VersionFromManifest.GetVersionFromModMetaData(ModLister.GetActiveModWithIdentifier("Mlie.OmniCoreDrill"));
+            VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
     public Settings Settings => _settings;
