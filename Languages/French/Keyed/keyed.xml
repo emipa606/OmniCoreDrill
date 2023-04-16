@@ -14,4 +14,26 @@
   <ocd.drillwork>Travaux de forage par unité de ressource</ocd.drillwork>
   <ocd.commonality>Rareté des ressources</ocd.commonality>
   <ocd.unfinishedPlan>Plan de forage inachevé {0}</ocd.unfinishedPlan>
+  <ocd.description>Forer profondément dans la croûte planétaire et extraire {0}.
+
+Rendement : {1:n0} {2}</ocd.description>
+  <ocd.density.tip><![CDATA[Contrôle l'importance des gisements de ressources. Affecte les <i>rendements</i> des ressources.
+
+N'a pas d'effet sur les morceaux de pierre.
+
+REMARQUE : les rendements sont plafonnés pour produire au moins <i>une</i> unité d'un matériau. Si le rendement est réduit davantage, la valeur du rendement ne changera pas - au lieu de cela, la quantité de travail augmentera pour compenser.]]></ocd.density.tip>
+  <ocd.drillwork.tip><![CDATA[Contrôle la quantité de travail nécessaire pour forer chaque ressource.
+Le travail de forage se compose de deux éléments : Le forage <i>vers</i> - et finalement le forage <i>dans</i> les ressources.
+
+Ceci modifie la composante "forage <i>dans</i>" ou <i>"obtenir le matériel"</i>.]]></ocd.drillwork.tip>
+  <ocd.commonality.tip><![CDATA[Contrôle la quantité de travail nécessaire pour "trouver" chaque ressource.
+Le travail de forage se compose de deux éléments : Le forage <i>vers</i> - et finalement le forage <i>dans</i> les ressources.
+
+Ceci modifie la composante forage <i>vers</i> ou <i>trouver la ressource'</i>.
+
+N'a pas d'effet sur les morceaux de pierre.]]></ocd.commonality.tip>
+  <ocd.work.tip><![CDATA[Modifie directement le travail nécessaire pour forer un matériau.]]></ocd.work.tip>
+  <ocd.yield.tip><![CDATA[Modifie directement le rendement de forage d'un matériau.
+
+REMARQUE : les rendements sont plafonnés pour produire au moins <i>une</i> unité d'un matériau. Si le rendement est réduit davantage, la valeur du rendement ne changera pas - la quantité de travail augmentera pour compenser.]]></ocd.yield.tip>
 </LanguageData>

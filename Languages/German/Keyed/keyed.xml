@@ -14,4 +14,26 @@
   <ocd.drillwork>Bohrarbeiten pro Ressourceneinheit</ocd.drillwork>
   <ocd.commonality>Seltenheit der Ressource</ocd.commonality>
   <ocd.unfinishedPlan>Unvollendeter {0} Bohrplan</ocd.unfinishedPlan>
+  <ocd.description>Bohren Sie tief in die Planetenkruste und bauen Sie {0} ab.
+
+Ausbeute: {1:n0} {2}</ocd.description>
+  <ocd.density.tip><![CDATA[Steuert, wie groß die Rohstoffvorkommen sind. Beeinflusst die <i>Ressourcenausbeute</i>.
+
+Hat keinen Einfluss auf Steinbrocken.
+
+HINWEIS: Die Ausbeute ist auf die Produktion von mindestens <i>einer</i> Einheit eines Materials begrenzt. Wird die Ausbeute weiter gesenkt, ändert sich der Wert der Ausbeute nicht - stattdessen erhöht sich der Arbeitsaufwand zum Ausgleich.]]></ocd.density.tip>
+  <ocd.drillwork.tip><![CDATA[Steuert, wie viel Arbeit für die Bohrung jeder Ressource erforderlich ist.
+Die Bohrarbeit setzt sich aus zwei Komponenten zusammen: Bohren <i>zu</i> - und schließlich Bohren <i>in</i> die Ressourcen.
+
+Dies modifiziert die Komponente Bohren <i>in</i> oder <i>'das Zeug holen'</i>.]]></ocd.drillwork.tip>
+  <ocd.commonality.tip><![CDATA[Legt fest, wie viel Arbeit erforderlich ist, um jede Ressource zu finden".
+Die Bohrarbeit besteht aus zwei Komponenten: Bohren <i>zu</i> - und schließlich Bohren <i>in</i> die Ressourcen.
+
+Dies modifiziert die Komponente Bohren <i>nach</i> oder <i>'Finde das Zeug'</i>.
+
+Hat keinen Einfluss auf Steinbrocken.]]></ocd.commonality.tip>
+  <ocd.work.tip><![CDATA[Ändert direkt die Arbeit, die zum Bohren nach einem Material erforderlich ist.]]></ocd.work.tip>
+  <ocd.yield.tip><![CDATA[Ändert direkt die Bohrausbeute für ein Material.
+
+HINWEIS: Die Ausbeute ist auf die Produktion von mindestens <i>einer</i> Einheit eines Materials begrenzt. Wenn die Ausbeute weiter reduziert wird, ändert sich der Ausbeutewert nicht - stattdessen erhöht sich der Arbeitsaufwand, um dies auszugleichen.]]></ocd.yield.tip>
 </LanguageData>

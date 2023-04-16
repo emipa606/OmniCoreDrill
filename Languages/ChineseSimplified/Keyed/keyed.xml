@@ -14,4 +14,26 @@
   <ocd.drillwork>每个资源单位的钻探工作</ocd.drillwork>
   <ocd.commonality>资源的稀缺性</ocd.commonality>
   <ocd.unfinishedPlan>未完成的{0}钻探计划</ocd.unfinishedPlan>
+  <ocd.description>钻入行星地壳深处，开采{0}。
+
+产量：{1:n0}{2}</ocd.description>
+  <ocd.density.tip><![CDATA[控制资源矿藏的规模。影响资源的<i>产量</i>。
+
+对石块没有影响。
+
+注意：产量的上限是生产至少<i>一个</i>单位的材料。如果产量被进一步缩减，产量值将不会改变--相反，工作量将增加以进行补偿。]]></ocd.density.tip>
+  <ocd.drillwork.tip><![CDATA[控制每个资源的钻探需要多少工作。
+钻探工作是由两部分组成的：钻探<i>到</i> - 和最终钻探<i>到</i>资源。
+
+这修改了钻探<i>进入</i>或<i>'获取东西'</i>组件。]]></ocd.drillwork.tip>
+  <ocd.commonality.tip><![CDATA[控制 "找到 "每种资源需要多少工作。
+钻探工作是由两个部分组成的：钻探<i>到</i> - 和最终钻探<i>到</i>资源。
+
+这修改了钻探<i>to</i>或<i>'find the stuff'</i>组件。
+
+对石头块没有影响。]]></ocd.commonality.tip>
+  <ocd.work.tip><![CDATA[直接修改钻取材料所需的工作。]]></ocd.work.tip>
+  <ocd.yield.tip><![CDATA[直接修改材料的钻孔产量。
+
+注意：产量的上限是生产至少<i>一个</i>单位的材料。如果产量进一步缩小，产量值将不会改变--相反，工作量将增加以进行补偿。]]></ocd.yield.tip>
 </LanguageData>

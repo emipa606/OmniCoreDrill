@@ -44,6 +44,4 @@ Can be installed into existing savegames. Can be safely uninstalled once all bil
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-
-
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2562491370]Last updated 2023-04-12
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2562491370]Last updated 2023-04-16
