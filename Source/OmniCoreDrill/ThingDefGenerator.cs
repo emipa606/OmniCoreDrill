@@ -42,7 +42,7 @@ public static class ThingDefGenerator
 
             var recipe = new RecipeDef
             {
-                efficiencyStat = StatDefOf.DeepDrillingSpeed,
+                efficiencyStat = StatDefOf.MiningYield,
                 workSpeedStat = StatDefOf.DeepDrillingSpeed,
                 effectWorking = EffecterDefOf.Drill,
                 workSkillLearnFactor = 0.2f,
