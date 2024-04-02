@@ -50,18 +50,15 @@ public static class ThingDefGenerator
                 defName = $"OCD_MineDeep{t.defName}",
                 label = LanguageKeys.keyed.ocd_label.Translate(t.LabelCap),
                 jobString = LanguageKeys.keyed.ocd_jobString.Translate(t.LabelCap),
-                products = new List<ThingDefCountClass>
-                {
+                products =
+                [
                     new ThingDefCountClass
                     {
                         thingDef = t,
                         count = 0
                     }
-                },
-                recipeUsers = new List<ThingDef>
-                {
-                    DefReferences.Thing_CoreDrill
-                },
+                ],
+                recipeUsers = [DefReferences.Thing_CoreDrill],
                 unfinishedThingDef = DefReferences.Thing_UnfinishedDrillingPlan
             };
 

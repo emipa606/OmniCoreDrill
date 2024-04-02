@@ -19,9 +19,9 @@ internal class OmniCoreDrillMod : Mod
     private static readonly string labelRight = multiplierMaxScale.ToStringPercent();
     private static string currentVersion;
 
-    private Vector2 _scrollPosition;
+    protected readonly Settings _settings;
 
-    protected Settings _settings;
+    private Vector2 _scrollPosition;
 
 
     public OmniCoreDrillMod(ModContentPack content) : base(content)

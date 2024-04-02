@@ -4,7 +4,7 @@ using Verse;
 
 namespace DoctorVanGogh.OmniCoreDrill;
 
-internal class DrillingProperties
+internal class DrillingProperties(float hitpointsPerLump, BuildingProperties buildingProps)
 {
     private const float workPerHitpoint = 2f;
     private const float densityFactor = 40f;
@@ -14,16 +14,7 @@ internal class DrillingProperties
 
     private static GlobalDrillParameters _params;
 
-    private readonly BuildingProperties _buildingProps;
-
-    protected readonly float _hitpointsPerLump;
-
-
-    public DrillingProperties(float hitpointsPerLump, BuildingProperties buildingProps)
-    {
-        _hitpointsPerLump = hitpointsPerLump;
-        _buildingProps = buildingProps;
-    }
+    protected readonly float _hitpointsPerLump = hitpointsPerLump;
 
 
     private static float WorkPerHitpoint => workPerHitpoint * DrillParameters.DrillWork.Value;
@@ -35,13 +26,13 @@ internal class DrillingProperties
                                                                 .Settings.GlobalParameters);
 
     public float Work => (_hitpointsPerLump * WorkPerHitpoint)
-                         + (_buildingProps.isResourceRock
+                         + (buildingProps.isResourceRock
                              ? (float)(CommonalityFactor /
-                                       Math.Sqrt(Math.Max(_buildingProps.mineableScatterCommonality,
+                                       Math.Sqrt(Math.Max(buildingProps.mineableScatterCommonality,
                                            minScatterCommonality)))
                              : 0);
 
-    public float Yield => _buildingProps.isResourceRock
-        ? _buildingProps.mineableScatterLumpSizeRange.Average * _buildingProps.mineableYield / DensityFactor
+    public float Yield => buildingProps.isResourceRock
+        ? buildingProps.mineableScatterLumpSizeRange.Average * buildingProps.mineableYield / DensityFactor
         : 1f;
 }

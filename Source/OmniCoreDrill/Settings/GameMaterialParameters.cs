@@ -17,7 +17,7 @@ internal class GameMaterialParameters : GameComponent
     {
     }
 
-    public MaterialParameters this[ThingDef def] => _materialModifiers.TryGetValue(def, out var mp) ? mp : null;
+    public MaterialParameters this[ThingDef def] => _materialModifiers.GetValueOrDefault(def);
 
 
     public override void ExposeData()
