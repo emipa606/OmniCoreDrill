@@ -73,5 +73,5 @@ Can be installed into existing savegames. Can be safely uninstalled once all bil
 [/list]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/changelog/2562491370][img]https://img.shields.io/github/v/release/emipa606/OmniCoreDrill?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+  <modVersion IgnoreIfNoMatchingField="True">1.5.1</modVersion>
 </ModMetaData>

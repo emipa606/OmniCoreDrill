@@ -1,5 +1,8 @@
 # Changelog for OmniCoreDrill
 
+1.5.1 - Should now be able to mine resources only defined as available for the deep-miner
+
+
 1.5.0 - Mod updated for 1.5 and passed autotests
 
 
