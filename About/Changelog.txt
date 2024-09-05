@@ -1,5 +1,8 @@
 # Changelog for OmniCoreDrill
 
+1.5.2 - Fixed a yield issue with mods that add minable materials that gives the same resource as already existing minables.
+
+
 1.5.1 - Should now be able to mine resources only defined as available for the deep-miner
 
 

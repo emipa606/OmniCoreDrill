@@ -39,6 +39,14 @@ public static class ThingDefGenerator
                 continue;
             }
 
+            if (_miningRecipes.ContainsKey(buildingProperties.mineableThing))
+            {
+                Log.Warning(
+                    $"Minable thing of {thingDef.defName} is already calculated, skipping.");
+                continue;
+            }
+
+
             var mineableThing = buildingProperties.mineableThing;
 
             var recipe = new RecipeDef
