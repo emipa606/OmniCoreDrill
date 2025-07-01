@@ -6,6 +6,17 @@ Update of DoctorVanGogh, TheUbie and pointcaches mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=1089876213
 
 - Updated the previews with the correct texture
+- Cost of the drill
+ -- 2000 Steel
+ -- 10 Components
+ -- 400 Plasteel
+ -- 75 Additional Metal
+
+**Info regarding [Beyond Our Reach](https://steamcommunity.com/sharedfiles/filedetails/?id=3253594129)**
+That mod makes the drill much harder to get as it locks it behind its own research and materials.
+If you do not like this change, please see the [patch](https://steamcommunity.com/sharedfiles/filedetails/?id=3423233982) by Harmonea that reverses the changes
+
+Also check out the [retexture](https://steamcommunity.com/sharedfiles/filedetails/?id=3347947286) by OganessonG
  
 ![Image](https://i.imgur.com/pufA0kM.png)
 	
@@ -43,6 +54,6 @@ Can be installed into existing savegames. Can be safely uninstalled once all bil
 -  If you have the solution for a problem, please post it to the GitHub repository.
 -  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
+ 
 
-
-[![Image](https://img.shields.io/github/v/release/emipa606/OmniCoreDrill?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2562491370)
+[![Image](https://img.shields.io/github/v/release/emipa606/OmniCoreDrill?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2562491370) | tags:  configurable

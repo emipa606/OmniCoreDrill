@@ -1,5 +1,8 @@
 # Changelog for OmniCoreDrill
 
+1.6.0 - Mod updated for 1.6 and passed autotests
+
+
 1.5.2 - Fixed a yield issue with mods that add minable materials that gives the same resource as already existing minables.
 
 

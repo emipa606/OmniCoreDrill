@@ -15,7 +15,6 @@ public class UnfinishedDrillingPlan : UnfinishedThing
             return;
         }
 
-        Log.Warning("Spawned an UnfinishedDrillingPlan without a Recipe - removing!");
         Destroy();
     }
 }

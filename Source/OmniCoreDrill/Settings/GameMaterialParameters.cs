@@ -6,10 +6,9 @@ namespace DoctorVanGogh.OmniCoreDrill;
 
 internal class GameMaterialParameters : GameComponent
 {
-    private Dictionary<ThingDef, MaterialParameters> _materialModifiers =
-        new Dictionary<ThingDef, MaterialParameters>();
+    private Dictionary<ThingDef, MaterialParameters> _materialModifiers = new();
 
-    public GameMaterialParameters()
+    private GameMaterialParameters()
     {
     }
 
@@ -31,24 +30,24 @@ internal class GameMaterialParameters : GameComponent
     {
         base.LoadedGame();
 
-        PrepareDrill();
+        prepareDrill();
     }
 
     public override void StartedNewGame()
     {
         base.StartedNewGame();
 
-        PrepareDrill();
+        prepareDrill();
     }
 
-    private void PrepareDrill()
+    private void prepareDrill()
     {
-        UpsertMaterialModifiers();
+        upsertMaterialModifiers();
         ThingDefGenerator.UpdateAllGeneratedDefs();
         LoadedModManager.GetMod<OmniCoreDrillMod>().MaterialParams = this;
     }
 
-    private void UpsertMaterialModifiers()
+    private void upsertMaterialModifiers()
     {
         foreach (var coreMiningDef in ThingDefGenerator.GetCoreMiningDefs())
         {

@@ -31,7 +31,7 @@ public static class ThingDefGenerator
 
         foreach (var thingDef in minableDefs)
         {
-            var props = CalculateDrillProperties(thingDef, out var buildingProperties);
+            var props = calculateDrillProperties(thingDef, out var buildingProperties);
             if (props == null)
             {
                 Log.Warning(
@@ -41,8 +41,6 @@ public static class ThingDefGenerator
 
             if (_miningRecipes.ContainsKey(buildingProperties.mineableThing))
             {
-                Log.Warning(
-                    $"Minable thing of {thingDef.defName} is already calculated, skipping.");
                 continue;
             }
 
@@ -71,7 +69,7 @@ public static class ThingDefGenerator
                 unfinishedThingDef = DefReferences.Thing_UnfinishedDrillingPlan
             };
 
-            UpdateGeneratedDef(mineableThing, recipe, props, thingDef.LabelCap);
+            updateGeneratedDef(mineableThing, recipe, props, thingDef.LabelCap);
 
             _miningRecipes[mineableThing] = recipe;
             _drillProperties[mineableThing] = props;
@@ -91,7 +89,7 @@ public static class ThingDefGenerator
             Log.Message(
                 $"Using {nearestThingDef} as a substitute for {mineableThing} to calculate deep mining values.");
 
-            var props = CalculateDrillProperties(nearestThingDef, out _);
+            var props = calculateDrillProperties(nearestThingDef, out _);
             if (props == null)
             {
                 Log.Warning(
@@ -121,7 +119,7 @@ public static class ThingDefGenerator
                 unfinishedThingDef = DefReferences.Thing_UnfinishedDrillingPlan
             };
 
-            UpdateGeneratedDef(mineableThing, recipe, props, mineableThing.LabelCap);
+            updateGeneratedDef(mineableThing, recipe, props, mineableThing.LabelCap);
 
             _miningRecipes[mineableThing] = recipe;
             _drillProperties[mineableThing] = props;
@@ -131,7 +129,7 @@ public static class ThingDefGenerator
         return _miningRecipes.Values;
     }
 
-    private static DrillingProperties CalculateDrillProperties(ThingDef source,
+    private static DrillingProperties calculateDrillProperties(ThingDef source,
         out BuildingProperties buildingProperties)
     {
         buildingProperties = source.building;
@@ -143,10 +141,10 @@ public static class ThingDefGenerator
 
     public static void UpdateGeneratedDef(ThingDef material)
     {
-        UpdateGeneratedDef(material, _miningRecipes[material], _drillProperties[material], _sourceLabels[material]);
+        updateGeneratedDef(material, _miningRecipes[material], _drillProperties[material], _sourceLabels[material]);
     }
 
-    private static void UpdateGeneratedDef(ThingDef material, RecipeDef recipe, DrillingProperties props,
+    private static void updateGeneratedDef(ThingDef material, RecipeDef recipe, DrillingProperties props,
         string sourceLabel)
     {
         var yield = props.Yield;
@@ -177,7 +175,7 @@ public static class ThingDefGenerator
     {
         foreach (var miningRecipe in _miningRecipes)
         {
-            UpdateGeneratedDef(miningRecipe.Key, miningRecipe.Value, _drillProperties[miningRecipe.Key],
+            updateGeneratedDef(miningRecipe.Key, miningRecipe.Value, _drillProperties[miningRecipe.Key],
                 _sourceLabels[miningRecipe.Key]);
         }
     }

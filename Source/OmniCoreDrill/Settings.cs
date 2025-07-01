@@ -4,7 +4,7 @@ namespace DoctorVanGogh.OmniCoreDrill;
 
 internal class Settings : ModSettings
 {
-    private GlobalDrillParameters _props = new GlobalDrillParameters();
+    private GlobalDrillParameters _props = new();
 
     public GlobalDrillParameters GlobalParameters => _props;
 

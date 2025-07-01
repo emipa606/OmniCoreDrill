@@ -2,6 +2,13 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
-  "SocialImageSet": true
+  "PreviewVersion": "1.6",
+  "SocialImageSet": true,
+  "LastXmlCleaning": "2025-07-01T21:25:56.3684901+02:00",
+  "Patches": false,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 32288.0,
+  "LinesOfXML": 4401.0,
+  "SearchTags": " configurable"
 }

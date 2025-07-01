@@ -9,7 +9,7 @@ internal class MaterialParameters : IExposable
     private Multiplier _work;
     private Multiplier _yield;
 
-    public MaterialParameters()
+    private MaterialParameters()
     {
         _work = new Multiplier();
         _yield = new Multiplier();

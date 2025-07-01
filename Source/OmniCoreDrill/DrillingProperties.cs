@@ -14,7 +14,7 @@ internal class DrillingProperties(float hitpointsPerLump, BuildingProperties bui
 
     private static GlobalDrillParameters _params;
 
-    protected readonly float _hitpointsPerLump = hitpointsPerLump;
+    private readonly float _hitpointsPerLump = hitpointsPerLump;
 
 
     private static float WorkPerHitpoint => workPerHitpoint * DrillParameters.DrillWork.Value;

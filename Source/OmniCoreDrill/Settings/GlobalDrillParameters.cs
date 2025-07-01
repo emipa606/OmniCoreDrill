@@ -50,7 +50,7 @@ internal class GlobalDrillParameters : IExposable
         _commonality.PropertyChanged += Component_PropertyChanged;
     }
 
-    private void Component_PropertyChanged(object sender, PropertyChangedEventArgs e)
+    private static void Component_PropertyChanged(object sender, PropertyChangedEventArgs e)
     {
         switch (e.PropertyName)
         {

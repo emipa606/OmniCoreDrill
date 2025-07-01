@@ -19,14 +19,12 @@ internal class OmniCoreDrillMod : Mod
     private static readonly string labelRight = multiplierMaxScale.ToStringPercent();
     private static string currentVersion;
 
-    protected readonly Settings _settings;
-
     private Vector2 _scrollPosition;
 
 
     public OmniCoreDrillMod(ModContentPack content) : base(content)
     {
-        _settings = GetSettings<Settings>();
+        Settings = GetSettings<Settings>();
 
         var harmonyInstance = new Harmony("DoctorVanGogh.OmniCoreDrill");
         harmonyInstance.PatchAll(Assembly.GetExecutingAssembly());
@@ -36,7 +34,7 @@ internal class OmniCoreDrillMod : Mod
             VersionFromManifest.GetVersionFromModMetaData(content.ModMetaData);
     }
 
-    public Settings Settings => _settings;
+    public Settings Settings { get; }
 
     public GameMaterialParameters MaterialParams { get; set; }
 
@@ -63,22 +61,22 @@ internal class OmniCoreDrillMod : Mod
         const float iconSize = 24f;
 
 
-        DoModifier(
+        doModifier(
             list.GetRect(sliderHeight),
             LanguageKeys.keyed.ocd_density.Translate(),
-            _settings.GlobalParameters.Density,
+            Settings.GlobalParameters.Density,
             LanguageKeys.keyed.ocd_density_tip.Translate(),
             1);
-        DoModifier(
+        doModifier(
             list.GetRect(sliderHeight),
             LanguageKeys.keyed.ocd_commonality.Translate(),
-            _settings.GlobalParameters.Commonality,
+            Settings.GlobalParameters.Commonality,
             LanguageKeys.keyed.ocd_commonality_tip.Translate(),
             2);
-        DoModifier(
+        doModifier(
             list.GetRect(sliderHeight),
             LanguageKeys.keyed.ocd_drillwork.Translate(),
-            _settings.GlobalParameters.DrillWork,
+            Settings.GlobalParameters.DrillWork,
             LanguageKeys.keyed.ocd_drillwork_tip.Translate(),
             3);
 
@@ -180,13 +178,13 @@ internal class OmniCoreDrillMod : Mod
                 var mp = gmp[entry.Key];
 
                 Widgets.DrawLineVertical(line.x + w4, line.y - gapSize, line.height + gapSize);
-                DoMultiplierContentsShortened(
+                doMultiplierContentsShortened(
                     new Rect(line.x + w4 + dividerSize, line.y, w2 - dividerSize, line.height), mp.Work);
                 GUI.Label(new Rect(line.x + w4 + w2 + gapSize, line.y, w1 - (2 * gapSize) - 8f, line.height),
                     entry.Value.workAmount.ToStringWorkAmount(), resultStyle);
 
                 Widgets.DrawLineVertical(line.x + w4 + w3, line.y - gapSize, line.height + gapSize);
-                DoMultiplierContentsShortened(
+                doMultiplierContentsShortened(
                     new Rect(line.x + w4 + w3 + dividerSize, line.y, w2 - dividerSize, line.height), mp.Yield);
                 GUI.Label(new Rect(line.x + w4 + w2 + w3 + gapSize, line.y, w1 - (2 * gapSize) - 8f, line.height),
                     entry.Value.products[0].count.ToString(), resultStyle);
@@ -203,7 +201,7 @@ internal class OmniCoreDrillMod : Mod
         list.End();
     }
 
-    private static void DoMultiplierContentsShortened(Rect rect, Multiplier m)
+    private static void doMultiplierContentsShortened(Rect rect, Multiplier m)
     {
         string leftLabel = null;
         string rightLabel = null;
@@ -217,7 +215,7 @@ internal class OmniCoreDrillMod : Mod
         m.DoWindowContents(rect, minMultiplier, maxMultiplier, leftLabel, rightLabel);
     }
 
-    private void DoModifier(Rect inRect, string label, Multiplier m, string tooltip, int uniqueId)
+    private static void doModifier(Rect inRect, string label, Multiplier m, string tooltip, int uniqueId)
     {
         var half = inRect.width / 2f;
 
